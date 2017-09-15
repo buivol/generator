@@ -1,0 +1,221 @@
+
+.main h2{
+	padding-top: 20px;
+}
+.cont{
+	min-height: 200px;
+	margin-top: 40px;
+}
+#log{
+	min-height: 350px;
+	max-height: 350px;
+	overflow-x: scroll;
+	background-color: #000;
+}
+.log-time{
+	padding: 3px 4px 3px 4px;
+	color: #51C857;
+}
+.log-message{
+	display: block;
+	color:#51C857;
+}
+.log-type-1{
+	color: #F6F6F6;
+}
+.log-type-2{
+	color: #8AADD8;
+}
+.log-type-3{
+	color: #F6D244;
+}
+.log-type-4{
+	color: #F0612D;
+}
+.pt{
+	font-size: 18px;
+	padding-top: 18px;
+}
+.btn-ig{
+	margin:5px;
+}
+#groups,
+#marks,
+#grp{
+	margin-top: 20px;
+}
+.buffer{
+	display: none;
+}
+.ig-save,
+.ig-cancel{
+	display: none;
+}
+.bootstrap-tagsinput .tag{
+    background-color: #7CA0E5;
+    padding: 1px 5px 4px 7px;
+    border-radius: 8px;
+    margin: 3px 0px;
+    display: inline-block;
+}
+.s-set-bl{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.mk-actions{
+    display: block;
+    position: relative;
+    width: 143px;
+    border: 0;
+    margin-left: -150px;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+    right: 30px;
+    top: 47px;
+    opacity: .0;
+}
+tr:hover .mk-actions{
+	opacity: .4;
+}
+.mk-actions:hover{
+	opacity: 1!important;
+}
+input[type="color"]{
+    width: 100px;
+    height: 44px;
+    padding: 3px;
+}
+.letsel{
+    padding: 0px 0px 0px 12px;
+}
+#secs{
+	font-size: 76px;
+    font-weight: 300;
+    text-align: center;
+}
+.ig-price,
+.ig-id,
+.ig-image{
+	font-size: 13px;
+    line-height: 14px;
+}
+
+.ig-price br,
+.ig-id br{
+    display: block;
+    content: "";
+    margin-top: 10px;
+    margin-bottom: 6px;
+    border-top: 1px solid #CFCFCF;
+}
+.lblcb{
+    margin-bottom: 12px;
+    line-height: 17px;
+    font-size: 15px;
+    display: block;
+    min-width: 95px;
+}
+.lblcb input[type="checkbox"]{
+    margin-right: 7px;
+}
+.sk-folding-cube {
+  margin: auto;
+  position: absolute;
+  top: 200px; left: 0; bottom: 0; right: 0;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
+
+#preloader{
+	position: fixed;
+	top:0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #1ABC9C;
+	color: #fff;
+	margin: auto;
+}
