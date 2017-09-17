@@ -25,7 +25,7 @@ if ($true_password != $entered_password) {
     <h2>Генератор презентаций</h2>
     <div class="cont">
         <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
+        <ul class="nav nav-tabs flex-column flex-sm-row" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" data-toggle="tab" href="#phome" role="tab">Генерировать</a>
             </li>
@@ -45,6 +45,9 @@ if ($true_password != $entered_password) {
                 <a class="nav-link" data-toggle="tab" href="#pout" role="tab">Настройки</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#prof" role="tab">Профили</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="/get" target="_blank">Скачать презентации</a>
             </li>
         </ul>
@@ -62,6 +65,24 @@ if ($true_password != $entered_password) {
                     <div class="col-md-6">
                         <p class="pt">Лог операций:</p>
                         <div id="log"></div>
+                    </div>
+                </div>
+                <p><label for="aftLink"><input type="checkbox" name="aftLink" id="aftLink">&nbsp;Проверить на
+                        дубли</label></p>
+                <button class="btn btn-success" id="generator-start">Начать</button>
+            </div>
+
+            <div class="tab-pane" id="prof" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="pt">Профили:</p>
+                        <div id="workgroup">
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="pt">Переключить профиль:</p>
+                        <div id="profiles"></div>
                     </div>
                 </div>
                 <p><label for="aftLink"><input type="checkbox" name="aftLink" id="aftLink">&nbsp;Проверить на
@@ -1093,7 +1114,7 @@ if ($true_password != $entered_password) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/6d2a93d693.js"></script>
-<script src="assets/bootstrap-tagsinput.js?r=<?= rand() ?>"></script>
+<script src="assets/bootstrap-tagsinput.js"></script>
 <script src="assets/generator.js?r=<?= rand() ?>"></script>
 <script src="assets/generator-process.js?r=<?= rand() ?>"></script>
 <script src="assets/generator-settings.js?r=<?= rand() ?>"></script>
