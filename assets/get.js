@@ -1,3 +1,3 @@
-$(function() {
-	$("#download").tablesorter(); 
+$(function () {
+    $("#download").tablesorter();
 });

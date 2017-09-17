@@ -6,6 +6,10 @@ $count_bad  = '0';
 
 $buffer = '';
 
+/**
+ * @var $config array
+ */
+
 foreach ( $settings['config']['links'] as $k => $link ) {
 	$p = $link['path'];
 	if ( $link['active'] != 'false' ) {

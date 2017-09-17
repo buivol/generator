@@ -1,14 +1,14 @@
 <?php
 session_start();
-$a = file('.secret.txt');
-$true_password = trim($a[0]);
-if (!isset($_SESSION['ep'])) {
-    $entered_password = '';
+$a = file( '.secret.txt' );
+$true_password = trim( $a[0] );
+if ( ! isset( $_SESSION['ep'] ) ) {
+	$entered_password = '';
 } else {
-    $entered_password = $_SESSION['ep'];
+	$entered_password = $_SESSION['ep'];
 }
-if ($true_password != $entered_password) {
-    header('location: login.php');
+if ( $true_password != $entered_password ) {
+	header( 'location: login.php' );
 }
 ?><!DOCTYPE html>
 <html lang="ru">
@@ -885,9 +885,11 @@ if ($true_password != $entered_password) {
                     <label for="mke-col" class="col-4 col-form-label">Колонка истины</label>
                     <div class="col-3">
                         <select class="form-control letsel" id="mke-col">
-                            <?php
-                            for ($i = 0; $i < 26; $i++) echo '<option value="' . chr($i + 65) . '">' . chr($i + 65) . '</option>';
-                            ?>
+							<?php
+							for ( $i = 0; $i < 26; $i ++ ) {
+								echo '<option value="' . chr( $i + 65 ) . '">' . chr( $i + 65 ) . '</option>';
+							}
+							?>
                         </select>
                     </div>
                     <div class="col-2 center">значение</div>
@@ -899,9 +901,11 @@ if ($true_password != $entered_password) {
                     <label for="mke-code" class="col-6 col-form-label">Колонка с артикулом</label>
                     <div class="col-6">
                         <select class="form-control letsel" id="mke-code">
-                            <?php
-                            for ($i = 0; $i < 26; $i++) echo '<option value="' . chr($i + 65) . '">' . chr($i + 65) . '</option>';
-                            ?>
+							<?php
+							for ( $i = 0; $i < 26; $i ++ ) {
+								echo '<option value="' . chr( $i + 65 ) . '">' . chr( $i + 65 ) . '</option>';
+							}
+							?>
                         </select>
                     </div>
                 </div>
@@ -910,25 +914,31 @@ if ($true_password != $entered_password) {
                     <label for="mke-pfix" class="col-2 col-form-label">Фикс</label>
                     <div class="col-2">
                         <select class="form-control letsel" id="mke-pfix">
-                            <?php
-                            for ($i = 0; $i < 26; $i++) echo '<option value="' . chr($i + 65) . '">' . chr($i + 65) . '</option>';
-                            ?>
+							<?php
+							for ( $i = 0; $i < 26; $i ++ ) {
+								echo '<option value="' . chr( $i + 65 ) . '">' . chr( $i + 65 ) . '</option>';
+							}
+							?>
                         </select>
                     </div>
                     <label for="mke-pnew" class="col-2 col-form-label">Новая</label>
                     <div class="col-2">
                         <select class="form-control letsel" id="mke-pnew">
-                            <?php
-                            for ($i = 0; $i < 26; $i++) echo '<option value="' . chr($i + 65) . '">' . chr($i + 65) . '</option>';
-                            ?>
+							<?php
+							for ( $i = 0; $i < 26; $i ++ ) {
+								echo '<option value="' . chr( $i + 65 ) . '">' . chr( $i + 65 ) . '</option>';
+							}
+							?>
                         </select>
                     </div>
                     <label for="mke-pbase" class="col-2 col-form-label">Базовая</label>
                     <div class="col-2">
                         <select class="form-control letsel" id="mke-pbase">
-                            <?php
-                            for ($i = 0; $i < 26; $i++) echo '<option value="' . chr($i + 65) . '">' . chr($i + 65) . '</option>';
-                            ?>
+							<?php
+							for ( $i = 0; $i < 26; $i ++ ) {
+								echo '<option value="' . chr( $i + 65 ) . '">' . chr( $i + 65 ) . '</option>';
+							}
+							?>
                         </select>
                     </div>
                 </div>
